@@ -1,0 +1,258 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 90px 16px 150px 16px;
+  text-align: center;
+}
+
+.section_ttl {
+  font-size: 72px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  position: absolute;
+  top: 30%;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  border-bottom: solid 6px #e03131;
+  display: inline-block;
+}
+
+.fixed_bg {
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/mainvisual.jpeg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+.header pa .header_nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.header pa .header_nav li a {
+  color: #FFFFFF;
+  font-size: 14.4px;
+  font-weight: bold;
+  padding-left: 30px;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  transition: all 0.3s ease;
+}
+.header pa .header_nav li a:hover {
+  color: #e03131;
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu_content {
+  position: relative;
+  margin-top: 20px;
+}
+.menu_content .menu_img {
+  background-image: url(../img/menu.jpg);
+  position: relative;
+}
+
+.menu_area {
+  display: flex;
+}
+.menu_area .menu_box {
+  width: 50%;
+  padding: 0 45px;
+}
+.menu_area .menu_box dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu_area .menu_box dl dt {
+  width: 87%;
+  text-align: left;
+  border-bottom: dotted 1px #000;
+  margin-bottom: 25px;
+}
+.menu_area .menu_box dl dd {
+  width: 13%;
+  text-align: right;
+  padding-top: 8px;
+  padding-left: 15.5px;
+}
+
+.menu_box:first-child {
+  border-right: solid 1px #000;
+}
+
+.about_content {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+.about_content .about_img {
+  background-image: url(../img/about.jpg);
+  position: relative;
+}
+
+.about_area {
+  margin-top: 90px;
+}
+.about_area .about_txt {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+.about_area .about_txt li {
+  width: 50%;
+  line-height: 2;
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.about_area .btn {
+  width: 160px;
+  height: 50px;
+  line-height: 3.5;
+  display: inline-block;
+  color: #000;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.about_area .btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+.btn::before 右の赤線
+.btn::after 下の赤線
+.btn span::before 左の赤線
+.btn span::after 上の赤線
+*/
+#about .btn::before,
+#about .btn::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+
+#about .btn span::before,
+#about .btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+
+#about .btn::before,
+#about .btn span::before {
+  width: 2px;
+  height: 50%;
+}
+
+#about .btn::after,
+#about .btn span::after {
+  width: 20%;
+  height: 2px;
+}
+
+/*
+ホバー時の縦の動作
+右の赤線と左の赤線の高さを100%にする
+*/
+#about .btn:hover::before,
+#about .btn span:hover::before {
+  height: 100%;
+}
+
+/*
+ホバー時の横の動作
+下の赤線と上の赤線の横幅を100%にする
+*/
+#about .btn:hover::after,
+#about .btn span:hover::after {
+  width: 100%;
+}
+
+.location_content {
+  position: relative;
+  margin-top: 170px;
+}
+.location_content .location_img {
+  background-image: url(../img/location.jpg);
+  position: relative;
+}
+
+.location_area .map {
+  filter: grayscale(1);
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.location_area .map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+.info {
+  text-align: left;
+}
+
+.footer_content {
+  text-align: center;
+}
+.footer_content p {
+  font-size: 10px;
+  padding-bottom: 10px;
+  color: #383E45;
+}/*# sourceMappingURL=style_20220605235839 2.css.map */

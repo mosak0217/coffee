@@ -1,0 +1,33 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  border-bottom: solid 6px #e03131;
+}/*# sourceMappingURL=style_20220605152040 2.css.map */

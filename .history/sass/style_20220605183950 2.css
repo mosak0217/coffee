@@ -1,0 +1,115 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 90px 16px 150px 16px;
+  text-align: center;
+}
+
+.section_ttl {
+  font-size: 72px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  position: absolute;
+  top: 30%;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  border-bottom: solid 6px #e03131;
+  display: inline-block;
+}
+
+.fixed_bg {
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/mainvisual.jpeg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+.header .header_nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.header .header_nav li a {
+  color: #FFFFFF;
+  font-size: 14.4px;
+  font-weight: bold;
+  padding-left: 30px;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  transition: all 0.3s ease;
+}
+.header .header_nav li a:hover {
+  color: #e03131;
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu_content {
+  position: relative;
+}
+.menu_content .menu_img {
+  background-image: url(../img/menu.jpg);
+  position: relative;
+}
+
+.menu_box {
+  width: 50%;
+}
+.about_content {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+.about_content .about_img {
+  background-image: url(../img/about.jpg);
+  position: relative;
+}
+
+.location_content {
+  position: relative;
+}
+.location_content .location_img {
+  background-image: url(../img/);
+  position: relative;
+}/*# sourceMappingURL=style_20220605183950 2.css.map */
